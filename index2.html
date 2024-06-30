@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Фото и лайк</title>
+    <style>
+      #photos-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .photo {
+        flex: 1 1 calc(33.33% - 20px);
+        margin: 10px;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+      }
+
+      .photo img {
+        width: 100%;
+        height: auto;
+      }
+      .likeBtn {
+        float: right;
+        background-color: rgb(236, 66, 66);
+        color: wheat;
+        border: 1px solid wheat;
+        border-radius: 10px;
+        height: 25px;
+        width: 50px;
+        margin: 15px;
+      }
+      .addLike {
+        float: right;
+        background-color: rgb(66, 236, 72);
+        color: wheat;
+        border: 1px solid wheat;
+        border-radius: 10px;
+        height: 25px;
+        width: 50px;
+        margin: 15px;
+      }
+      .like {
+        text-align: right;
+        font-size: 25px;
+        color: rgb(236, 66, 66);
+        margin-right: 25px;
+      }
+
+      .addLikeCount {
+        text-align: right;
+        font-size: 25px;
+        color: rgb(66, 236, 72);
+        margin-right: 25px;
+      }
+
+      .name {
+        padding: 20px;
+        font-size: 25px;
+      }
+    </style>
+    <script src="script2.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="photos-container"></div>
+    </div>
+  </body>
+</html>
